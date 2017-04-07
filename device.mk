@@ -68,7 +68,8 @@ PRODUCT_PACKAGES += \
     EvolutionSystemUIResTarget \
     OPlusFrameworksResTarget \
     OPlusSettingsProviderResTarget \
-    OPlusSystemUIResTarget
+    OPlusSystemUIResTarget \
+    WifiResMartini
 
 # Power
 PRODUCT_COPY_FILES += \
