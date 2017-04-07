@@ -65,7 +65,8 @@ PRODUCT_PACKAGES += \
     FaceUnlockServiceMartini \
     OPlusFrameworksResTarget \
     OPlusSettingsProviderResTarget \
-    OPlusSystemUIResTarget
+    OPlusSystemUIResTarget \
+    WifiResMartini
 
 
 # Power
