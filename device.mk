@@ -52,6 +52,7 @@ PRODUCT_PACKAGES += \
     EvolutionFrameworksResTarget\
     EvolutionSettingsResTarget \
     EvolutionSystemUIResTarget \
+    FaceUnlockServiceMartini \
     OPlusFrameworksResTarget \
     OPlusSettingsProviderResTarget \
     OPlusSystemUIResTarget
