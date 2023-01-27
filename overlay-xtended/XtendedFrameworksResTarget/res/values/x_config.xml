@@ -6,6 +6,7 @@
 -->
 <resources>
 
-
+    <!-- Default values for LiveDisplay -->
+    <bool name="config_enableLiveDisplay">false</bool>
 
 </resources>
