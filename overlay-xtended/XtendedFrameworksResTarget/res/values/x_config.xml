@@ -18,7 +18,5 @@
         <item>org.lineageos.lineageparts.gestures.KeyHandler</item>
     </string-array>
 
-    <!-- Whether the device supports wireless charging or not -->
-    <bool name="config_deviceSupportsWirelessCharging">true</bool>
 
 </resources>
