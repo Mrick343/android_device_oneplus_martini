@@ -33,5 +33,14 @@ SOONG_CONFIG_OPLUS_LINEAGE_TOUCH_HAL := INCLUDE_DIR
 SOONG_CONFIG_OPLUS_LINEAGE_TOUCH_HAL_INCLUDE_DIR := \
     $(DEVICE_PATH)/touch/include
 
+# Vibrator
+SOONG_CONFIG_NAMESPACES += OPLUS_LINEAGE_VIBRATOR_HAL
+SOONG_CONFIG_OPLUS_LINEAGE_VIBRATOR_HAL := \
+    vibrator_use_effect_stream \
+    INCLUDE_DIR
+SOONG_CONFIG_OPLUS_LINEAGE_VIBRATOR_HAL_vibrator_use_effect_stream := true
+SOONG_CONFIG_OPLUS_LINEAGE_VIBRATOR_HAL_INCLUDE_DIR := \
+    $(DEVICE_PATH)/vibrator/include
+
 # Include the proprietary files BoardConfig.
 include vendor/oneplus/martini/BoardConfigVendor.mk
