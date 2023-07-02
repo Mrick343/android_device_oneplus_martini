@@ -227,6 +227,35 @@
       "ResetOnInit": true
     },
     {
+      "Name": "SchedUtilClampMin",
+      "Path": "/proc/sys/kernel/sched_util_clamp_min",
+      "Values": [
+        "384",
+        "256"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
+      "Name": "SchedUtilClampMax",
+      "Path": "/proc/sys/kernel/sched_util_clamp_max",
+      "Values": [
+        "1024",
+        "512"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
+      "Name": "SchedTunableScaling",
+      "Path": "/proc/sys/kernel/sched_tunable_scaling",
+       "Values": [
+        "0",
+        "2"
+      ],
+      "ResetOnInit": true
+    },
+    {
       "Name": "DisplayWakeup",
       "Path": "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/early_wakeup",
       "Values": [
