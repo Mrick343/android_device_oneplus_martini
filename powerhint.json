@@ -252,7 +252,6 @@
         "1024",
         "512"
       ],
-      "DefaultIndex": 0,
       "ResetOnInit": true
     },
     {
@@ -423,6 +422,12 @@
       "Node": "SchedUtilClampMin",
       "Duration": 3000,
       "Value": "512"
+    },
+     {
+      "PowerHint": "LAUNCH",
+      "Node": "SchedUtilClampMax",
+      "Duration": 3000,
+      "Value": "1024"
     },
     {
       "PowerHint": "LAUNCH",
