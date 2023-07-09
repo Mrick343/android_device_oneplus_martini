@@ -123,6 +123,16 @@
       "ResetOnInit": true
     },
     {
+      "Name": "UclampFgMax",
+      "Path": "/dev/cpuctl/foreground/cpu.uclamp.max",
+      "Values": [
+        "50",
+        "100"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
       "Name": "UclampTALatency",
       "Path": "/dev/cpuctl/top-app/cpu.uclamp.latency_sensitive",
       "Values": [
@@ -230,10 +240,9 @@
       "Name": "SchedUtilClampMin",
       "Path": "/proc/sys/kernel/sched_util_clamp_min",
       "Values": [
-        "384",
+        "512",
         "256"
       ],
-      "DefaultIndex": 0,
       "ResetOnInit": true
     },
     {
@@ -327,6 +336,12 @@
     },
     {
       "PowerHint": "INTERACTION",
+      "Node": "SchedUtilClampMin",
+      "Duration": 0,
+      "Value": "512"
+    },
+    {
+      "PowerHint": "INTERACTION",
       "Node": "CPUBWHystTriggerCount",
       "Duration": 0,
       "Value": "0"
@@ -396,6 +411,18 @@
       "Node": "UclampTAMin",
       "Duration": 3000,
       "Value": "50"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "UclampFgMax",
+      "Duration": 3000,
+      "Value": "100"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "SchedUtilClampMin",
+      "Duration": 0,
+      "Value": "512"
     },
     {
       "PowerHint": "LAUNCH",
