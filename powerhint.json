@@ -421,7 +421,7 @@
     {
       "PowerHint": "LAUNCH",
       "Node": "SchedUtilClampMin",
-      "Duration": 0,
+      "Duration": 3000,
       "Value": "512"
     },
     {
