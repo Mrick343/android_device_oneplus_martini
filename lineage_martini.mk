@@ -47,3 +47,6 @@ BUILD_GOOGLE_MESSAGE := true
 
 # UDFPS
 TARGET_HAS_UDFPS := true
+
+# BCR
+$(call inherit-product, vendor/bcr/bcr.mk)
