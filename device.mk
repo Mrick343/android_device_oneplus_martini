@@ -31,7 +31,9 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 # Camera
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/media/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml
+    $(LOCAL_PATH)/media/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml \
+    $(LOCAL_PATH)/camera/license_release.lic:$(TARGET_COPY_OUT_ODM)/etc/camera/singleblur/license_release.lic \
+    $(LOCAL_PATH)/camera/license_release.license:$(TARGET_COPY_OUT_ODM)/etc/camera/singleblur/license_release.license
 
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0.vendor
