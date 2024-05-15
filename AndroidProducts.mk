@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_martini.mk
+    $(LOCAL_DIR)/euclid_martini.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_martini-user \
-    lineage_martini-userdebug \
-    lineage_martini-eng
+    euclid_martini-user \
+    euclid_martini-userdebug \
+    euclid_martini-eng
